@@ -13,7 +13,27 @@
     <title>Neighborhood Map</title>
 </head>
 <body>
-<h1>Neighborhood Map</h1>
+<nav class="navbar navbar-dark">
+    <span class="navbar-text">
+    <b>PATNA TOURIST ATTRACTIONS</b>
+    </span>
+</nav>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <input type="search" class="form-control ds-input" id="search-filter" placeholder="Search..."
+                       data-bind="textInput: filter, valueUpdate: 'afterkeydown'">
+                <div class="list-group"
+                     data-bind="foreach: filteredList">
+                    <button type="button" class="list-group-item list-group-item-action"
+                            data-bind="text: $data.title"></button>
+                </div>
+            </div>
+            <div class="col-sm-8" id="map"></div>
+        </div>
+    </div>
+</main>
 
 <!-- javaScript -->
 <script src="js/lib/knockout-3.2.0.js"></script>
