@@ -1,3 +1,6 @@
-/**
- * Created by Shubham Prakash Jha on 12-08-2018.
- */
+var ViewModel = function() {
+    var self = this;
+
+};
+
+ko.applyBindings(new ViewModel());
