@@ -1,3 +1,20 @@
+var map;
+var markers = [];
+var polygon = null;
+var placeMarkers = [];
+
+function initMap() {
+
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+            lat: 25.594095,
+            lng: 85.137566
+        },
+        zoom: 13
+        // mapTypeControl: false
+    });
+}
+
 var ViewModel = function() {
     var self = this;
     this.filter = ko.observable('');
