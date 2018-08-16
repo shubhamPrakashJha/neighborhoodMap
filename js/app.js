@@ -1,7 +1,6 @@
 var map;
 var markers = [];
-var polygon = null;
-var placeMarkers = [];
+
 
 function initMap() {
 
