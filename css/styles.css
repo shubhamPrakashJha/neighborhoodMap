@@ -1,25 +1,34 @@
 html,
 body {
+    /*font-family: Arial, sans-serif;*/
+    background-color: #000000;
+    color: white;
+}
+
+#map {
+    height: 100vh;
+}
+
+button {
     font-family: Arial, sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
-input {
-    font-size: 12px;
+.list-group-item {
+    background-color: #2d2d2df2;
+    margin-top: 1px;
+    margin-bottom: 0;
 }
 
-h1 {
-    color: #525454;
-    font-size: 22px;
-    margin: 0 0 10px 0;
-    text-align: center;
+#search-filter {
+    margin-bottom: 1px;
 }
 
-hr {
-    background: #D0D7D9;
-    height: 1px;
-    margin: 20px 0 20px 0;
-    border: none;
+.list-group-item-action {
+    color: #b2bac1;
+}
+
+@media (max-width: 576px) {
+    #map {
+        margin-top: 15px;
+    }
 }
