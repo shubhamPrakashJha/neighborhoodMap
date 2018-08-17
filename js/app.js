@@ -12,6 +12,21 @@ function initMap() {
         zoom: 13
         // mapTypeControl: false
     });
+
+
+    locations.forEach(function (place) {
+        place.marker = new google.maps.Marker({
+            title: place.title,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            position: place.location
+        });
+
+        markers.push({
+            title: place.title,
+            marker: place.marker
+        });
+    });
 }
 
 var ViewModel = function() {
