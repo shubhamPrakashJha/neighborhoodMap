@@ -27,6 +27,8 @@ function initMap() {
             marker: place.marker
         });
     });
+
+    ko.applyBindings(new ViewModel());
 }
 
 var ViewModel = function() {
@@ -46,5 +48,3 @@ var ViewModel = function() {
         return result;
     })
 };
-
-ko.applyBindings(new ViewModel());
