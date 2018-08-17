@@ -13,6 +13,7 @@ function initMap() {
         // mapTypeControl: false
     });
 
+    var bounds = new google.maps.LatLngBounds();
 
     locations.forEach(function (place) {
         place.marker = new google.maps.Marker({
@@ -26,6 +27,9 @@ function initMap() {
             title: place.title,
             marker: place.marker
         });
+
+        bounds.extend(place.marker.position);
+        map.fitBounds(bounds);
     });
 
     ko.applyBindings(new ViewModel());
