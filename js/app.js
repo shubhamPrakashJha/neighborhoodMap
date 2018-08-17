@@ -36,15 +36,24 @@ var ViewModel = function() {
     this.filter = ko.observable('');
 
     this.filteredList = ko.computed(function () {
-        var result = [];
-        locations.forEach(function (location) {
-            if(self.filter() === null){
-                result.push(location)
-            }
-            else if(location.title.toLowerCase().startsWith(self.filter().toLowerCase())){
-                result.push(location)
-            }
-        });
-        return result;
-    })
+        var filter = self.filter().toLowerCase();
+        if (filter === null) {
+            locations.forEach(function (place) {
+                place.marker.setVisible(true);
+            });
+            return locations;
+        }
+        else {
+            var result = [];
+            locations.forEach(function (place) {
+                if(place.title.toLowerCase().startsWith(self.filter().toLowerCase())){
+                    place.marker.setVisible(true);
+                    result.push(place);
+                }else {
+                    place.marker.setVisible(false);
+                }
+            });
+            return result;
+        }
+    });
 };
