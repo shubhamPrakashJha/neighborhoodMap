@@ -19,6 +19,8 @@ function initMap() {
 
     var bounds = new google.maps.LatLngBounds();
     var largeInfoWindow = new google.maps.InfoWindow();
+    var defaultIcon = makeMarkerIcon('red-dot');
+    var highlightedIcon = makeMarkerIcon('blue-dot');
 
     locations.forEach(function (place) {
         place.marker = new google.maps.Marker({
@@ -39,6 +41,14 @@ function initMap() {
                 place.marker.setAnimation(null);
             }, 1400);
             populateInfoWindow(this, largeInfoWindow)
+        });
+        place.marker.setIcon(defaultIcon);
+
+        place.marker.addListener('mouseover', function () {
+            this.setIcon(highlightedIcon);
+        });
+        place.marker.addListener('mouseout', function () {
+            this.setIcon(defaultIcon);
         });
 
         bounds.extend(place.marker.position);
@@ -100,6 +110,17 @@ function populateInfoWindow(marker, infowindow) {
         }
         infowindow.open(map, marker);
     }
+}
+
+function makeMarkerIcon(markerColor) {
+    var markerImage = {
+        url: "http://maps.google.com/mapfiles/ms/icons/"+markerColor+".png",
+        size: new google.maps.Size(71,71),
+        origin: new google.maps.Point(0,0),
+        anchor: new google.maps.Point(17,34),
+        scaledSize: new google.maps.Size(50,50)
+    };
+    return markerImage;
 }
 
 var ViewModel = function() {
