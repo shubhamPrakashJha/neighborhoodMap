@@ -2,6 +2,8 @@
 
 Developed a Responsive single page Web Application featuring a map of Tourist Arrtactions near my City usinfg using __*KnockoutJS*__, __Google Maps API__ and __MediaWiki API__(wikipedia API). 
 
+![App Screenshot](img/Screenshot.png)
+
 ## Features
 - highlighted locations
 - WikiPedia Descriptions and link about those locations
