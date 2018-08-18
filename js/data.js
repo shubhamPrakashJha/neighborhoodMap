@@ -5,22 +5,22 @@ var locations = [
     {
         title: 'Buddha Smriti Park',
         location: {
-            lat: 25.606396,
-            lng: 85.137062
+            lat: 25.60666942,
+            lng: 85.13610465
         }
     },
     {
         title: 'Golghar',
         location: {
-            lat: 25.620346,
-            lng: 85.139429
+            lat: 25.62026729,
+            lng: 85.13948321
         }
     },
     {
         title: 'Sanjay Gandhi Jaivik Udyan',
         location: {
-            lat: 25.597593,
-            lng: 85.100845
+            lat: 25.60293232,
+            lng: 85.10036451
         }
     },
     {
@@ -40,8 +40,8 @@ var locations = [
     {
         title: 'Patna Planetarium',
         location: {
-            lat: 25.610284,
-            lng: 85.131796
+            lat: 25.61076734,
+            lng: 85.1314795
         }
     },
     {
@@ -54,15 +54,15 @@ var locations = [
     {
         title: 'Takht Sri Patna Sahib',
         location: {
-            lat: 25.595947,
-            lng: 85.230065
+            lat: 25.59629281,
+            lng: 85.23007687
         }
     },
     {
         title: 'Gandhi Ghat',
         location: {
-            lat: 25.622221,
-            lng: 85.172609
+            lat: 25.62194755,
+            lng: 85.17223449
         }
     },
     {
@@ -70,6 +70,13 @@ var locations = [
         location: {
             lat: 25.617460,
             lng: 85.140709
+        }
+    },
+    {
+        title: 'Gandhi Maidan',
+        location: {
+            lat: 25.6188181,
+            lng: 85.14261044
         }
     }
 
