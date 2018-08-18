@@ -22,8 +22,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3">
+                <!-- data-bind input element to filer observable to fetch user input keyword-->
                 <input type="search" class="form-control ds-input" id="search-filter" placeholder="Search..."
                        data-bind="textInput: filter, valueUpdate: 'afterkeydown'">
+
+                <!-- display all the locations title from the filtered list of computed array-->
                 <div class="list-group"
                      data-bind="foreach: filteredList">
                     <button type="button" class="list-group-item list-group-item-action"
@@ -51,7 +54,7 @@
 
 <!-- Google Maps Api -->
 <script async defer onerror="mapInitError();"
-        src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyCXfaaixhalC0BstPFGQ6YfQx_ypqFfW_8&v=3&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyDfJvam7mTnXOVfvvZjJMiGdONov2V5kfM&v=3&callback=initMap">
 </script>
 </body>
 </html>
