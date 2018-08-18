@@ -27,7 +27,7 @@
                 <div class="list-group"
                      data-bind="foreach: filteredList">
                     <button type="button" class="list-group-item list-group-item-action"
-                            data-bind="text: title"></button>
+                            data-bind="text: title, click: $parent.animateMarker"></button>
                 </div>
             </div>
             <div class="col-sm-8" id="map"></div>

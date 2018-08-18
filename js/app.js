@@ -31,6 +31,10 @@ function initMap() {
         });
 
         place.marker.addListener('click',function () {
+            place.marker.setAnimation(google.maps.Animation.BOUNCE);
+            setTimeout(function () {
+                place.marker.setAnimation(null);
+            }, 1400);
             populateInfoWindow(this, largeInfoWindow)
         });
 
@@ -98,6 +102,10 @@ function populateInfoWindow(marker, infowindow) {
 var ViewModel = function() {
     var self = this;
     this.filter = ko.observable('');
+
+    this.animateMarker = function (location) {
+        google.maps.event.trigger(location.marker, 'click');
+    };
 
     this.filteredList = ko.computed(function () {
         var filter = self.filter().toLowerCase();
