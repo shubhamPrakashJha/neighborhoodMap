@@ -18,7 +18,9 @@ function initMap() {
     });
 
     var bounds = new google.maps.LatLngBounds();
-    var largeInfoWindow = new google.maps.InfoWindow();
+    var largeInfoWindow = new google.maps.InfoWindow({
+        maxWidth: 300
+    });
     var defaultIcon = makeMarkerIcon('red-dot');
     var highlightedIcon = makeMarkerIcon('blue-dot');
 
