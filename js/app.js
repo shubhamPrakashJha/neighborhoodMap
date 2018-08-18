@@ -1,6 +1,9 @@
 var map;
 var markers = [];
 
+function mapInitError() {
+    window.alert("Error occurred while loading google maps... ");
+}
 
 function initMap() {
 
