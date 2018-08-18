@@ -2,7 +2,7 @@
  * Created by Shubham Prakash Jha on 18-08-2018.
  */
 var styles = [
-    {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+    {elementType: 'geometry', stylers: [{color: '#000000'}]},
     {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
     {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
     {
