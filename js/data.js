@@ -17,28 +17,28 @@ var locations = [
         }
     },
     {
-        title: 'Patna Zoo',
+        title: 'Sanjay Gandhi Jaivik Udyan',
         location: {
             lat: 25.597593,
             lng: 85.100845
         }
     },
     {
-        title: 'Shrikrishna Science Centre',
+        title: 'Srikrishna Science Centre',
         location: {
             lat: 25.616419,
             lng: 85.141108
         }
     },
     {
-        title: 'ISKON Temple',
+        title: 'ISKCON Temple Patna',
         location: {
             lat: 25.606811,
             lng: 85.133422
         }
     },
     {
-        title: 'Planetarium',
+        title: 'Patna Planetarium',
         location: {
             lat: 25.610284,
             lng: 85.131796
@@ -52,21 +52,21 @@ var locations = [
         }
     },
     {
-        title: 'Patna Sahib Gurdwara',
+        title: 'Takht Sri Patna Sahib',
         location: {
             lat: 25.595947,
             lng: 85.230065
         }
     },
     {
-        title: 'Floating Restaurant',
+        title: 'Gandhi Ghat',
         location: {
             lat: 25.622221,
             lng: 85.172609
         }
     },
     {
-        title: 'Revolving Restaurant',
+        title: 'Biscomaun Bhawan',
         location: {
             lat: 25.617460,
             lng: 85.140709
