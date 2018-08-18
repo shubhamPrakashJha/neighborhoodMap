@@ -121,7 +121,7 @@ var ViewModel = function() {
         else {
             var result = [];
             locations.forEach(function (place) {
-                if(place.title.toLowerCase().startsWith(self.filter().toLowerCase())){
+                if(place.title.toLowerCase().includes(self.filter().toLowerCase())){
                     place.marker.setVisible(true);
                     result.push(place);
                 }else {
