@@ -6,7 +6,7 @@ body {
 }
 
 #map {
-    height: 100vh;
+    height: 94vh;
 }
 
 button {
@@ -41,4 +41,14 @@ button {
 
 .gm-iv-address {
     height: 59px !important;
+}
+
+.list-group-item-action:focus {
+    color: #ffffff;
+    background-color: rgba(98, 145, 255, 0.79);
+}
+
+.list-group-item:hover {
+    color: #f9f9f9;
+    background-color: #6395ff;
 }
