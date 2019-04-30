@@ -4,7 +4,7 @@
 Developed a Responsive single page Web Application featuring a map of Tourist Attractions near my City using __*KnockoutJS*__, __Google Maps API__ and __MediaWiki API__(wikipedia API). 
 
 **Live version of this project is available at:**   
-http://shubhamprakashjha.me/neighborhoodMap/
+https://shubhamprakashjha.me/neighborhoodMap/
 
 ![App Screenshot](img/Screenshot.png)
 
